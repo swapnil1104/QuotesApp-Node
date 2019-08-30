@@ -1,0 +1,30 @@
+<html>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+  <body>
+    <div class="container">
+      <h1>Quote added.</h1>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <p><%= quote %></p>
+          <p><%= author %></p>
+          <button onclick="goBack()">Go Back</button>
+        </div>
+        <div class="col-sm-4">
+          <img src="<%= url %>" class="rounded float-left img-thumbnail" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
